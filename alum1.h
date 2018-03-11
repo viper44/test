@@ -18,14 +18,16 @@
 typedef struct	s_data
 {
 	int			player;
+	int			flag;
 	int			flag_bad;
-	char**		ptr_board;
+	int			end;
 }				t_data;
 
 typedef struct		s_chain
 {
 	int				value;
 	struct s_chain	*next;
+	struct s_chain	*prev;
 }					t_chain;
 
 
